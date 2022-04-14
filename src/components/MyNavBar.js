@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -9,11 +9,18 @@ import logo from '../images/logo_no_bg.png'
 import LineIcon from 'react-lineicons'
 
 function MyNavBar() {
+    const [showNavBar, setNavBar] = useState(false);
+    const handleNavToggle = () => {
+        if (showNavBar){
+            setNavBar(false)
+            return
+        }
+        setNavBar(true)
+    }
     return (
-        <Navbar bg="light" expand="md" className='d-flex align-items-start'>
-            <Container className='d-flex flex-column align-items-end'>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
+        <>
+        <Navbar bg="light" className={showNavBar ? 'opened-nav' : 'initial-nav'}>
+            <Container>
                     <Row className='d-flex flex-column'>
                         <Navbar.Brand href="#" className='border-bottom border-3 mb-2'>
                             <img src={MiguelImage} alt="Miguel Rodriguez" height="200px" />
@@ -45,9 +52,12 @@ function MyNavBar() {
                             </Row>
                         </Col>
                     </Row>
-                </Navbar.Collapse>
             </Container>
         </Navbar>
+        <div className={showNavBar ? 'opened-toggle d-flex align-items-center justify-content-center' : 'initial-toggle d-flex align-items-center justify-content-center'} onClick={handleNavToggle}>
+            <LineIcon name={showNavBar ? 'cross-circle' : 'menu'} style={{fontSize: "40px"}} />
+        </div>
+        </>
     )
 }
 
