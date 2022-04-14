@@ -5,7 +5,7 @@
 
 ### Layout/Components
 - Navbar vertically on left side
-    - divided ibn 3 sections
+    - divided in 3 sections
     - My image on the top sec
     - Nav Menu in the mid sec
     - Social media links at the bottom
