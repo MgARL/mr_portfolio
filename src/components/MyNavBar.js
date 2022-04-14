@@ -54,7 +54,7 @@ function MyNavBar() {
                     </Row>
             </Container>
         </Navbar>
-        <div className={showNavBar ? 'opened-toggle d-flex align-items-center justify-content-center' : 'initial-toggle d-flex align-items-center justify-content-center'} onClick={handleNavToggle}>
+        <div className={showNavBar ? 'opened-toggle' : 'initial-toggle'} onClick={handleNavToggle}>
             <LineIcon name={showNavBar ? 'cross-circle' : 'menu'} style={{fontSize: "40px"}} />
         </div>
         </>

@@ -38,6 +38,9 @@ overflow-y: auto;
   z-index: 5;
   position: absolute;
   top: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .opened-toggle{
@@ -48,6 +51,9 @@ overflow-y: auto;
   position: absolute;
   top: 6em;
   left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
