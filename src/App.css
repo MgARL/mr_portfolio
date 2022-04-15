@@ -15,9 +15,11 @@ background-color: aquamarine;
 overflow-y: auto;
 }
 
+/* Nav Animations */
 .initial-nav{
   max-width: 250px;
   height: 100vh;
+  border: 1px solid black;
   display: absolute;
   top: -100vh;
   left: -250px;
@@ -26,18 +28,19 @@ overflow-y: auto;
 .opened-nav{
   max-width: 250px;
   height: 100vh;
+  border: 2px solid black;
   display: absolute;
   top: -100vh;
-  left: auto;
+  left: 0;
 }
 
 .initial-toggle{
   background-color: rgb(248,249,250);
   width: 50px;
   height: 50px;
-  z-index: 5;
+  border: 1px solid black;
   position: absolute;
-  top: 6em;
+  top: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,14 +50,40 @@ overflow-y: auto;
   background-color: rgb(248,249,250);
   width: 50px;
   height: 50px;
-  z-index: 5;
+  border: 1px solid black;
   position: absolute;
-  top: 6em;
+  top: 2em;
   left: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.opening-animation{
+  animation-name: open-nav;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-out;
+}
+
+.opening-animation-toggle{
+  animation-name: open-nav-toggle;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-out;
+}
+
+.closing-animation{
+  animation-name: close-nav;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-out;
+}
+
+.closing-animation-toggle{
+  animation-name: close-nav-toggle;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-out;
+}
+
+/* END NAV ANIMATIONS */
 
 @media screen and (min-width: 800px) {
   .initial-nav{
@@ -73,4 +102,26 @@ overflow-y: auto;
     .opened-toggle{
       display: none
     }
+}
+
+/* KEYFRAMES */
+
+@keyframes open-nav {
+  0% {left: -250px; }
+  100% {left: 0;}
+}
+
+@keyframes open-nav-toggle {
+  0% {left: 0; }
+  100% {left: 250px;}
+}
+
+@keyframes close-nav {
+  0% {left: 0; }
+  100% {left:  -250px;}
+}
+
+@keyframes close-nav-toggle {
+  0% {left: 250px; }
+  100% {left: 0;}
 }

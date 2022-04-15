@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -8,18 +8,10 @@ import MiguelImage from '../images/Miguel.png'
 import logo from '../images/logo_no_bg.png'
 import LineIcon from 'react-lineicons'
 
-function MyNavBar() {
-    const [showNavBar, setNavBar] = useState(false);
-    const handleNavToggle = () => {
-        if (showNavBar){
-            setNavBar(false)
-            return
-        }
-        setNavBar(true)
-    }
+function MyNavBar({showNavBar, handleNavToggle}) {
     return (
         <>
-        <Navbar bg="light" className={showNavBar ? 'opened-nav' : 'initial-nav'}>
+        <Navbar bg="light" className={showNavBar ? 'opening-animation opened-nav' : 'initial-nav closing-animation'}>
             <Container>
                     <Row className='d-flex flex-column'>
                         <Navbar.Brand href="#" className='border-bottom border-3 mb-2'>
@@ -41,20 +33,20 @@ function MyNavBar() {
                             </Row>
                             <Row >
                                 <Col xs={4}>
-                                    <LineIcon name="linkedin-original" tag="a" href="http://www.linkedin.com/in/miguel-rod-developer/" rel="noreferrer" target="_blank"/>
+                                    <LineIcon name="linkedin-original" style={{fontSize: "30px"}} tag="a" href="http://www.linkedin.com/in/miguel-rod-developer/" rel="noreferrer" target="_blank"/>
                                 </Col>
                                 <Col xs={4}> 
-                                <LineIcon name="github-original" tag="a" href="https://github.com/MgARL" rel="noreferrer" target="_blank"/>
+                                <LineIcon name="github-original" style={{fontSize: "30px"}} tag="a" href="https://github.com/MgARL" rel="noreferrer" target="_blank"/>
                                 </Col>
                                 <Col xs={4}>
-                                <LineIcon name="twitter-original" tag="a" href="https://twitter.com/mgarl22" rel="noreferrer" target="_blank"/>
+                                <LineIcon name="twitter-original" style={{fontSize: "30px"}} tag="a" href="https://twitter.com/mgarl22" rel="noreferrer" target="_blank"/>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
             </Container>
         </Navbar>
-        <div className={showNavBar ? 'opened-toggle' : 'initial-toggle'} onClick={handleNavToggle}>
+        <div className={showNavBar ? 'opened-toggle opening-animation-toggle' : 'initial-toggle closing-animation-toggle'} onClick={handleNavToggle}>
             <LineIcon name={showNavBar ? 'cross-circle' : 'menu'} style={{fontSize: "40px"}} />
         </div>
         </>
