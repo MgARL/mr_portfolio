@@ -11,13 +11,12 @@
 }
 .main-container{
 height: 100vh;
-background-color: aquamarine;
 overflow-y: auto;
 }
 
 /* Nav Animations */
 .initial-nav{
-  max-width: 250px;
+  max-width: 200px;
   height: 100vh;
   border: 1px solid black;
   display: absolute;
@@ -36,8 +35,8 @@ overflow-y: auto;
 
 .initial-toggle{
   background-color: rgb(248,249,250);
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border: 1px solid black;
   position: absolute;
   top: 2em;
@@ -48,8 +47,8 @@ overflow-y: auto;
 
 .opened-toggle{
   background-color: rgb(248,249,250);
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border: 1px solid black;
   position: absolute;
   top: 2em;
