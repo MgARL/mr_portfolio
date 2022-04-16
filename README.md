@@ -1,4 +1,4 @@
-# Miguel R Portfolio
+# Nick A Portfolio
 
 ### Goal:
 - Create a good looking and pleasing Portfolio to showcase my works
