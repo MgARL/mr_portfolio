@@ -3,10 +3,12 @@
   max-height: 100vh;
 }
 
-
+.no-bg{
+  background-color: transparent !important;
+}
 
 .footer-fill {
-  height: calc(100vh - 380px);
+  height: calc(100vh - 300px);
 
 }
 .main-container{
@@ -90,8 +92,8 @@ overflow-y: auto;
   }
   .main-container{
     position: relative;
-    left: 250px;
-    max-width: calc(100vw - 250px);
+    left: 200px;
+    max-width: calc(100vw - 200px);
     overflow-x: hidden;
     }
 

@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container'
 
 // MyComps
 import MyNavBar from './components/MyNavBar';
@@ -27,17 +26,15 @@ function App() {
     }
   }
   return (
-    <div className='App'>
+    <div className='App bg-info'>
       <Router>
         <div className='main-container' onClick={closeNavOnly}>
-          <Container>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/skills' element={<Skills />} />
               <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/contact' element={<Contact />} />
-            </Routes>
-          </Container>
+            </Routes>      
         </div>
         <MyNavBar showNavBar={showNavBar} handleNavToggle={handleNavToggle} closeNavOnly={closeNavOnly} Link={Link} />
 

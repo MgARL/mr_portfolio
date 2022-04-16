@@ -20,7 +20,7 @@ function MyNavBar({showNavBar, handleNavToggle,closeNavOnly, Link }) {
                         <Navbar.Brand as={Link} to="/" onClick={closeNavOnly}  className='border-bottom border-3 mb-2 d-flex justify-content-center'>
                             <img src={MiguelImage} alt="Miguel Rodriguez" height="150px" />
                         </Navbar.Brand>
-                        <Nav className="flex-column text-center border-bottom border-3 mb-2 footer-fill" navbarScroll>
+                        <Nav className="flex-column text-center border-bottom border-3 mb-2 footer-fill justify-content-center" style={{fontSize: '1.4em', fontWeight: '700'}}>
                             <Nav.Link as={Link} to="/" onClick={closeNavOnly}>Home</Nav.Link>
                             <Nav.Link as={Link} to="/skills" onClick={closeNavOnly}>Skills</Nav.Link>
                             <Nav.Link as={Link} to="/portfolio" onClick={closeNavOnly}>Portfolio</Nav.Link>
