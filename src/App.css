@@ -36,7 +36,7 @@ overflow-y: auto;
 }
 
 .initial-toggle{
-  background-color: rgb(248,249,250);
+  background-color: rgb(248,249,250, 0.8);
   width: 35px;
   height: 35px;
   border: 1px solid black;
@@ -81,7 +81,7 @@ overflow-y: auto;
 .closing-animation-toggle{
   animation-name: close-nav-toggle;
   animation-duration: 0.5s;
-  animation-timing-function:ease-out;
+  animation-timing-function: ease-out;
 }
 
 /* END NAV ANIMATIONS */
