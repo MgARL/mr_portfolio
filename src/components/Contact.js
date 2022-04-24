@@ -8,13 +8,40 @@ import Card from 'react-bootstrap/Card'
 import NCSLogo from '../images/NC_State_logo.jpg'
 
 function Contact() {
+  const types = ['Phone', 'Address', 'Email']
+  const infoArr = [<a href='tel:9195264896'>(919) 523-4896</a>, 'Raleigh, NC', 'mgarlcr@gmail.com']
+  const renderCards = () => {
+    return (
+      types.map((type, i) => {
+        return (
+            <Row className='d-flex justify-content-center mb-2' key={i}>
+              <Col xs={12} lg={10}>
+                <Card className='d-flex flex-row'>
+                  <Card.Body className='d-flex justify-content-center'>
+                    <img alt='placeholderNAme' src={NCSLogo} />
+                  </Card.Body>
+                  <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
+                    <Card.Title>{type}</Card.Title>
+                    <Card.Text>
+                      {infoArr[i]}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+        )
+      })
+    )
+  }
   return (
-    <Container style={{ height: '100vh' }} className='d-flex flex-column justify-content-center'>
-      {/* Tittle Contact Info */}
-      <h1 className='mb-5'>Contact Information</h1>
-      {/* Send Email form | Contact me */}
+    <Container style={{ height: '100vh' }} >
       <Row>
-        <Col xs={12} sm={6}>
+        <Col xs={12}>
+          <h1 className='mb-5'>Contact Information</h1>
+        </Col>
+      </Row>
+      <Row className='mx-2 py-2'>
+        <Col xs={12} lg={6} className='mb-3 py-3'>
           <h3>Contact Me</h3>
           <Form>
             <Form.Group controlId='basicForm' className='mb-3'>
@@ -30,33 +57,10 @@ function Contact() {
             <Button type="submit">Submit form</Button>
           </Form>
         </Col>
-        <Col xs={12} sm={6}>
-          <Row>
-            <Col xs={12}>
-              <Card className='d-flex flex-row'>
-                <Card.Body className='d-flex justify-content-center align-items-center'>
-                  <img alt='placeholderNAme' src={NCSLogo}/>
-                </Card.Body>
-                <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-                  <Card.Title>Phone</Card.Title>
-                  <Card.Text>
-                    <a href='tel:9195264896'>(919) 523-4896</a>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12}></Col>
-          </Row>
-          <Row>
-            <Col xs={12}></Col>
-          </Row>
+        <Col xs={12} lg={6} className='mb-3 py-3'>
+            {renderCards()}
         </Col>
       </Row>
-      {/* Other Container flex col */}
-      {/* inside second container 3 Cards with Phone, Email and City of residence */}
-
     </Container>
   )
 }
