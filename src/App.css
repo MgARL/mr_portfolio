@@ -19,11 +19,11 @@ overflow-y: auto;
 /* Nav Animations */
 .initial-nav{
   max-width: 200px;
-  height: 100vh;
   border: 1px solid black;
   display: absolute;
   top: -100vh;
   left: -250px;
+  height: 100vh;
 }
 
 .opened-nav{

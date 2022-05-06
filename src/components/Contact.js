@@ -5,27 +5,39 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import NCSLogo from '../images/NC_State_logo.jpg'
+import { AiTwotonePhone, AiOutlineMail } from 'react-icons/ai'
+import { BsFillPinMapFill } from 'react-icons/bs'
 
 function Contact() {
-  const types = ['Phone', 'Address', 'Email']
-  const infoArr = [<a href='tel:9195264896'>(919) 523-4896</a>, 'Raleigh, NC', 'mgarlcr@gmail.com']
+ const infoArr = [{
+   type: 'Phone',
+   myInfo: <a href='tel:9195264896'>(919) 523-4896</a>,
+   img: <AiTwotonePhone style={{fontSize: '2em'}}/>
+ },{
+   type: 'Address',
+   myInfo: 'Raleigh, NC',
+   img:  <BsFillPinMapFill style={{fontSize: '2em'}} />
+ },{
+  type: 'Email',
+  myInfo: <a href='mailto:mgarlcr@gmail.com'>mgarlcr@gmail.com</a>,
+  img: <AiOutlineMail  style={{fontSize: '2em'}}/>
+ }]
   const renderCards = () => {
     return (
-      types.map((type, i) => {
+      infoArr.map((info, i) => {
         return (
-            <Row className='d-flex justify-content-center mb-2' key={i}>
+            <Row className='d-flex justify-content-center mb-4' key={i}>
               <Col xs={12} lg={10}>
-                <Card className='d-flex flex-row'>
-                  <Card.Body className='d-flex justify-content-center'>
-                    <img alt='placeholderNAme' src={NCSLogo} />
-                  </Card.Body>
-                  <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-                    <Card.Title>{type}</Card.Title>
+                <Card className='d-flex flex-row p-4'>
+                  <Col xs={4} className='d-flex justify-content-center align-items-center'>
+                    {info.img}
+                  </Col>
+                  <Col xs={8} className='d-flex flex-column justify-content-center align-items-center'>
+                    <Card.Title>{info.type}</Card.Title>
                     <Card.Text>
-                      {infoArr[i]}
+                      {info.myInfo}
                     </Card.Text>
-                  </Card.Body>
+                  </Col>
                 </Card>
               </Col>
             </Row>
@@ -33,6 +45,7 @@ function Contact() {
       })
     )
   }
+
   return (
     <Container style={{ height: '100vh' }} >
       <Row>
@@ -52,7 +65,7 @@ function Contact() {
               <Form.Label>Subject:</Form.Label>
               <Form.Control type='input' placeholder='Enter Subject' />
               <Form.Label>Your Message:</Form.Label>
-              <Form.Control as='textarea' rows={3} placeholder='Enter Your Message' />
+              <Form.Control as='textarea' rows={3} placeholder='Enter Your Message'/>
             </Form.Group>
             <Button type="submit">Submit form</Button>
           </Form>

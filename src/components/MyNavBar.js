@@ -11,21 +11,23 @@ import logo from '../images/logo_no_bg.png'
 // my Comps
 import SocialMedia from './SocialMedia'
 
-function MyNavBar({showNavBar, handleNavToggle,closeNavOnly, Link }) {
+function MyNavBar({ showNavBar, handleNavToggle, closeNavOnly, Link }) {
     return (
         <>
-        <Navbar bg="light" className={showNavBar ? 'opening-animation opened-nav' : 'initial-nav closing-animation'}>
-            <Container>
-                    <Row  style={{height: '100vh'}}>
-                        <Navbar.Brand as={Link} to="/" onClick={closeNavOnly}  className='border-bottom border-3 d-flex justify-content-center'>
-                            <img src={MiguelImage} alt="Miguel Rodriguez" height="150px"/>
-                        </Navbar.Brand>
-                        <Nav className="flex-column text-center border-bottom border-3 mb-2 footer-fill justify-content-center" style={{fontSize: '1.4em', fontWeight: '700'}}>
-                            <Nav.Link as={Link} to="/" onClick={closeNavOnly}>Home</Nav.Link>
-                            <Nav.Link as={Link} to="/skills" onClick={closeNavOnly}>Skills</Nav.Link>
-                            <Nav.Link as={Link} to="/portfolio" onClick={closeNavOnly}>Portfolio</Nav.Link>
-                            <Nav.Link as={Link} to="/contact" onClick={closeNavOnly}>Contact</Nav.Link>
-                        </Nav>
+            <Navbar bg="light" className={showNavBar ? 'opening-animation opened-nav' : 'initial-nav closing-animation'}>
+                <Container>
+                    <Row>
+                        <Col xs={12}>
+                            <Navbar.Brand as={Link} to="/" onClick={closeNavOnly} className='border-bottom border-3 d-flex justify-content-center'>
+                                <img src={MiguelImage} alt="Miguel Rodriguez" height="150px" />
+                            </Navbar.Brand>
+                            <Nav className="flex-column text-center border-bottom border-3 mb-2 footer-fill justify-content-center" style={{ fontSize: '1.4em', fontWeight: '700' }}>
+                                <Nav.Link as={Link} to="/" onClick={closeNavOnly}>Home</Nav.Link>
+                                <Nav.Link as={Link} to="/skills" onClick={closeNavOnly}>Skills</Nav.Link>
+                                <Nav.Link as={Link} to="/portfolio" onClick={closeNavOnly}>Portfolio</Nav.Link>
+                                <Nav.Link as={Link} to="/contact" onClick={closeNavOnly}>Contact</Nav.Link>
+                            </Nav>
+                        </Col>
                         <Col xs={12} className="text-center">
                             <Row className='mb-2'>
                                 <Col xs={12}>
@@ -37,11 +39,11 @@ function MyNavBar({showNavBar, handleNavToggle,closeNavOnly, Link }) {
                             <SocialMedia />
                         </Col>
                     </Row>
-            </Container>
-        </Navbar>
-        <div className={showNavBar ? 'opened-toggle opening-animation-toggle' : 'initial-toggle closing-animation-toggle'} onClick={handleNavToggle}>
-            <LineIcon name={showNavBar ? 'cross-circle' : 'menu'} style={{fontSize: "25px"}} />
-        </div>
+                </Container>
+            </Navbar>
+            <div className={showNavBar ? 'opened-toggle opening-animation-toggle' : 'initial-toggle closing-animation-toggle'} onClick={handleNavToggle}>
+                <LineIcon name={showNavBar ? 'cross-circle' : 'menu'} style={{ fontSize: "25px" }} />
+            </div>
         </>
     )
 }
