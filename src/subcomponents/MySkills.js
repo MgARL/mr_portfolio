@@ -13,7 +13,7 @@ function MySkills() {
                 </Col>
             </Row>
             <Container className='bg-white py-1 rounded'>
-                <Row xs={3} className='mt-3'>
+                <Row xs={2} md={3} xxl={4} className='mt-3'>
                     {skillsArray.map((skill, i) =>{
                         return(
                             <Col key={i}>

@@ -23,15 +23,15 @@ overflow-y: auto;
 /* Nav Animations */
 .initial-nav{
   max-width: 200px;
+  height: 100vh;
   border: 1px solid black;
   display: absolute;
   top: -100vh;
   left: -250px;
-  height: 100vh;
 }
 
 .opened-nav{
-  max-width: 250px;
+  max-width: 200px;
   height: 100vh;
   border: 2px solid black;
   display: absolute;
@@ -45,7 +45,7 @@ overflow-y: auto;
   height: 35px;
   border: 1px solid black;
   position: absolute;
-  top: 2.4em;
+  top: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,8 +57,8 @@ overflow-y: auto;
   height: 35px;
   border: 1px solid black;
   position: absolute;
-  top: 2em;
-  left: 250px;
+  top: 1.5em;
+  left: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,21 +112,21 @@ overflow-y: auto;
 /* KEYFRAMES */
 
 @keyframes open-nav {
-  0% {left: -250px; }
+  0% {left: -200px; }
   100% {left: 0;}
 }
 
 @keyframes open-nav-toggle {
   0% {left: 0; }
-  100% {left: 250px;}
+  100% {left: 200px;}
 }
 
 @keyframes close-nav {
   0% {left: 0; }
-  100% {left:  -250px;}
+  100% {left:  -200px;}
 }
 
 @keyframes close-nav-toggle {
-  0% {left: 250px; }
+  0% {left: 200px; }
   100% {left: 0;}
 }

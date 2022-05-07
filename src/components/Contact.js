@@ -11,7 +11,7 @@ import Info from '../subcomponents/Info'
 function Contact() {
  
   return (
-    <Container style={{ height: '100vh' }} >
+    <Container style={{ height: '100vh', marginTop: '4rem' }} >
       <Row>
         <Col xs={12}>
           <h1 className='my-2'>Contact Information</h1>

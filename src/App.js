@@ -12,9 +12,11 @@ import Contact from './components/Contact';
 
 function App() {
   const [showNavBar, setNavBar] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(true)
   const handleNavToggle = () => {
     if (showNavBar) {
       setNavBar(false)
+      setFirstLoad(false)
       return
     }
     setNavBar(true)
@@ -36,7 +38,7 @@ function App() {
               <Route path='/contact' element={<Contact />} />
             </Routes>      
         </div>
-        <MyNavBar showNavBar={showNavBar} handleNavToggle={handleNavToggle} closeNavOnly={closeNavOnly} Link={Link} />
+        <MyNavBar showNavBar={showNavBar} handleNavToggle={handleNavToggle} closeNavOnly={closeNavOnly} firstLoad={firstLoad} Link={Link} />
 
       </Router>
     </div>
