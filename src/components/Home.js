@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 // My Comps
-import SocialMedia from './SocialMedia'
+import SocialMedia from '../subcomponents/SocialMedia'
 
 function Home() {
   return (

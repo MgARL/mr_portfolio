@@ -7,6 +7,10 @@
   background-color: transparent !important;
 }
 
+.bg-1{
+  background-color: rgb(240,248,255);
+}
+
 .footer-fill {
   height: calc(100vh - 300px);
 

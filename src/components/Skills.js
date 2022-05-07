@@ -2,9 +2,9 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 
 // My Comps
-import MySkills from './MySkills'
-import Experience from './Experience'
-import Courses from './Courses'
+import MySkills from '../subcomponents/MySkills'
+import Experience from '../subcomponents/Experience'
+import Courses from '../subcomponents/Courses'
 
 function Skills() {
   return (

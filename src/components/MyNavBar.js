@@ -9,12 +9,12 @@ import MiguelImage from '../images/Miguel.png'
 import logo from '../images/logo_no_bg.png'
 
 // my Comps
-import SocialMedia from './SocialMedia'
+import SocialMedia from '../subcomponents/SocialMedia'
 
 function MyNavBar({ showNavBar, handleNavToggle, closeNavOnly, Link }) {
     return (
         <>
-            <Navbar bg="light" className={showNavBar ? 'opening-animation opened-nav' : 'initial-nav closing-animation'}>
+            <Navbar bg="light" className={showNavBar ? 'opened-nav opening-animation' : 'initial-nav closing-animation'}>
                 <Container>
                     <Row>
                         <Col xs={12}>

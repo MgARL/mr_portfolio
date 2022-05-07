@@ -26,7 +26,7 @@ function App() {
     }
   }
   return (
-    <div className='App bg-info'>
+    <div className='App bg-1'>
       <Router>
         <div className='main-container' onClick={closeNavOnly}>
             <Routes>
