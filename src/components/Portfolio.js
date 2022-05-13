@@ -23,11 +23,13 @@ function Portfolio() {
           return (
             <Col key={i} className='d-flex justify-content-center'>
               <Card style={{ width: '35rem' }} >
-                <Card.Img variant="top" id={i} src={project.img} style={{ height: '17rem' }} onMouseEnter={(e) => {
-                  setHovering(true)
-                  setCurrentElement(e.target.id)
-                }} />
-                <HoverDiv liveSite={project.links.liveSite} frontEndRepo={project.links.frontEndRepo} backEndRepo={project.links.backEndRepo} hovering={hovering} setHovering={setHovering} currentElement={currentElement} index={i} />
+                <div style={{position: 'relative'}}>
+                  <Card.Img variant="top" id={i} src={project.img} onMouseEnter={(e) => {
+                    setHovering(true)
+                    setCurrentElement(e.target.id)
+                  }} />
+                  <HoverDiv liveSite={project.links.liveSite} frontEndRepo={project.links.frontEndRepo} backEndRepo={project.links.backEndRepo} hovering={hovering} setHovering={setHovering} currentElement={currentElement} index={i} />
+                </div>
                 <Card.Body className='mt-2' >
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>

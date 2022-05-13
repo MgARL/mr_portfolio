@@ -4,16 +4,14 @@ import tpq from '../images/tpq.png'
 import ZAnthology from '../images/ZAnthology.png'
 
 const projects = [{
-    title: 'Jetpack Evader',
+    title: 'TPQ Detailing',
     description: {
-        frontEnd: 'Front end: Game created with HTML, CSS and JavaScript. Handles user interactions to manipulate the DOM. Works with an API to save and compare high scores against a global leaderboard. Focused on Desktop web browser, and created a message for mobile users to let them know this is available for Desktop only.',
-        backEnd: 'Back end: server with two main endpoints one to retrieve data from database and other to store scores data to the database. It connects to Firebase Realtime Database and handles request from front-end application.'
+        frontEnd: 'Created simple react app that displays information about TPQ business. Technologies used: React, React-Router-Dom, JavaScript, CSS, html',
     },
-    img: jetPack,
+    img: tpq,
     links: {
-        liveSite: 'https://gifted-rosalind-2ca118.netlify.app/',
-        frontEndRepo: 'https://github.com/MgARL/Jetpack-Evader',
-        backEndRepo: 'https://github.com/MgARL/JetPack-Evader-Back-End'
+        liveSite: 'https://tpqdetailing.com/',
+        frontEndRepo: 'https://github.com/MgARL/tpq-detailing',
     }
 },{
     title: 'Zelda Anthology',
@@ -26,14 +24,16 @@ const projects = [{
         frontEndRepo: 'https://github.com/MgARL/zelda-anthology',
     }
 },{
-    title: 'TPQ Detailing',
+    title: 'Jetpack Evader',
     description: {
-        frontEnd: 'Created simple react app that displays information about TPQ business. Technologies used: React, React-Router-Dom, JavaScript, CSS, html',
+        frontEnd: 'Front end: Game created with HTML, CSS and JavaScript. Handles user interactions to manipulate the DOM. Works with an API to save and compare high scores against a global leaderboard. Focused on Desktop web browser, and created a message for mobile users to let them know this is available for Desktop only.',
+        backEnd: 'Back end: server with two main endpoints one to retrieve data from database and other to store scores data to the database. It connects to Firebase Realtime Database and handles request from front-end application.'
     },
-    img: tpq,
+    img: jetPack,
     links: {
-        liveSite: 'https://tpqdetailing.com/',
-        frontEndRepo: 'https://github.com/MgARL/tpq-detailing',
+        liveSite: 'https://gifted-rosalind-2ca118.netlify.app/',
+        frontEndRepo: 'https://github.com/MgARL/Jetpack-Evader',
+        backEndRepo: 'https://github.com/MgARL/JetPack-Evader-Back-End'
     }
 },{
     title: 'Fly Away',
