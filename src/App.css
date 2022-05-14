@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
 .App {
-  /* text-align: center; */
+  font-family: 'Roboto Condensed', sans-serif;
   max-height: 100vh;
 }
 
@@ -9,6 +11,9 @@
 
 .bg-1{
   background-color: rgb(240,248,255);
+}
+.color-1{
+  color: rgb(216,82,73);
 }
 
 .footer-fill {

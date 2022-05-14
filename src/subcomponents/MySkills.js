@@ -12,7 +12,7 @@ function MySkills() {
                     <h2>My Skills & Technologies</h2>
                 </Col>
             </Row>
-            <Container className='bg-white py-1 rounded'>
+            <Container className='py-1 rounded'>
                 <Row xs={2} md={3} xxl={4} className='mt-3'>
                     {skillsArray.map((skill, i) =>{
                         return(

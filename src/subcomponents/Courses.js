@@ -35,8 +35,8 @@ function Courses() {
                 </Col>
             </Row>
             <Row className='mb-3'>
-                <Col xs={12}>
-                    <Card className='no-bg' >
+                <Col xs={12} sm={4}>
+                    <Card>
                         <Card.Body>
                             <Card.Title> <img src={NCSLogo} alt="North Carolina State logo" height='30px' className='me-2' /> North Carolina State University</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Sep 2021 - Jul 2022</Card.Subtitle>
