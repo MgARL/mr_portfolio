@@ -14,16 +14,16 @@ function MySkills() {
                 </Col>
             </Row>
             <Container className='py-1 rounded'>
-                <Row xs={2} md={3} xxl={4} className='mt-3 d-flex align-items-center'>
+                <Row xs={1} md={3} xxl={4} className='mt-3 d-flex align-items-center'>
                     {skillsArray.map((skill, i) => {
                         const { name, logo } = skill
                         return (
                             <Col key={i}>
-                                <Row className='mt-3'>
-                                    {logo ? <Col xs={2} className='d-flex align-items-center'>
+                                <Row className='mt-3 d-flex justify-content-center'>
+                                    {logo ? <Col xs={3} md={2} className='d-flex align-items-center'>
                                         {logo}
                                     </Col> : null}
-                                    <Col xs={10} className='d-flex align-items-center'>
+                                    <Col xs={7}  md={10} className='d-flex align-items-center'>
                                         <h5 className='mt-2'>{name}</h5>
                                     </Col>
                                 </Row>
