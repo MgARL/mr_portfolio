@@ -26,9 +26,12 @@ function Portfolio() {
         <Row className='my-5 g-4 text-center' xs={1} lg={2} xxl={3}>
           {projects.map((project, i) => {
             return (
-              <Col key={i} className='d-flex justify-content-center align-items-center' onClick={() => {
+              <motion.div key={i} className='d-flex justify-content-center align-items-center' onClick={() => {
                 setCurrentProject(project)
                 setModalShow(true)
+              }}
+              whileHover={{
+                scale: 1.1
               }}>
                 <Card style={{ width: '35rem' }} >
                   <div style={{ position: 'relative' }}>
@@ -39,7 +42,7 @@ function Portfolio() {
                     <HoverDiv project={project} hovering={hovering} setHovering={setHovering} currentElement={currentElement} index={i} />
                   </div>
                 </Card>
-              </Col>
+              </motion.div>
             )
           })}
         </Row>

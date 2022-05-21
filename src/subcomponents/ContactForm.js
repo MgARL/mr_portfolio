@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
 import Spinner from 'react-bootstrap/Spinner'
 import Alert from 'react-bootstrap/Alert'
+import { motion } from 'framer-motion'
 
 
 function ContactForm({ setMessageSent }) {
@@ -69,7 +69,10 @@ function ContactForm({ setMessageSent }) {
                     <Form.Label>Your Message:</Form.Label>
                     <Form.Control as='textarea' rows={3} placeholder='Enter Your Message' minLength='10' value={message} required onChange={(e) => setMessage(e.target.value)} />
                 </Form.Group>
-                <Button type="submit">Submit</Button>
+                <motion.button className='btn btn-primary' type='submit'
+            whileHover={{
+              scale: 1.1,
+            }} >Submit</motion.button>
             </Form>
         </Col>
     )
