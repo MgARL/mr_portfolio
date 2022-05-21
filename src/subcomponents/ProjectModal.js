@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Badge from 'react-bootstrap/Badge'
+import { motion } from 'framer-motion'
 
 function ProjectModal({ currentProject, ...props }) {
   const { title, description, links, techs } = currentProject
@@ -44,13 +45,13 @@ function ProjectModal({ currentProject, ...props }) {
 
         <Row xs={1} sm={3} className='text-center d-flex justify-content-center'>
           <Col className='my-2'>
-            <Button variant='success' as='a' href={links.liveSite} rel="noreferrer" target="_blank">Live Site</Button>
+            <motion.a className='btn btn-success' as='a' href={links.liveSite} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Live Site</motion.a>
           </Col>
           <Col className='my-2'>
-            <Button variant='success' as='a' href={links.frontEndRepo} rel="noreferrer" target="_blank">Front End</Button>
+            <motion.a className='btn btn-success' href={links.frontEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Front End</motion.a>
           </Col>
           {links.backEndRepo ? <Col className='my-2'>
-            <Button variant='success' as='a' href={links.backEndRepo} rel="noreferrer" target="_blank">Back End</Button>
+            <motion.a className='btn btn-success' as='a' href={links.backEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Back End</motion.a>
           </Col> : null}
         </Row>
       </Modal.Body>
