@@ -3,8 +3,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Container } from 'react-bootstrap'
 
+import skillsArray from '../assets/techNSkills'
+
 function MySkills() {
-    const skillsArray = ['HTML5', 'CSS3', 'JavaScript', 'ReactJS', 'NodeJS','ExpressJS', 'MongoDB', 'MongooseODM', 'PostgreSQL', 'SequelizeODM', 'git | Github', 'Bootstrap', 'Problem Solver', 'Goal Oriented', 'Detail Oriented']
     return (
         <>
             <Row>
@@ -13,14 +14,22 @@ function MySkills() {
                 </Col>
             </Row>
             <Container className='py-1 rounded'>
-                <Row xs={2} md={3} xxl={4} className='mt-3'>
-                    {skillsArray.map((skill, i) =>{
-                        return(
+                <Row xs={2} md={3} xxl={4} className='mt-3 d-flex align-items-center'>
+                    {skillsArray.map((skill, i) => {
+                        const { name, logo } = skill
+                        return (
                             <Col key={i}>
-                                <h5>{skill}</h5>
+                                <Row className='mt-3'>
+                                    {logo ? <Col xs={2} className='d-flex align-items-center'>
+                                        {logo}
+                                    </Col> : null}
+                                    <Col xs={10} className='d-flex align-items-center'>
+                                        <h5 className='mt-2'>{name}</h5>
+                                    </Col>
+                                </Row>
                             </Col>
                         )
-                    })}                  
+                    })}
                 </Row>
 
             </Container>

@@ -14,8 +14,8 @@ import SocialMedia from '../subcomponents/SocialMedia'
 function MyNavBar({ showNavBar, firstLoad, handleNavToggle, closeNavOnly, Link }) {
     return (
         <>
-            <Navbar bg="light" className={showNavBar ? 'opened-nav opening-animation' : firstLoad ? 'initial-nav' :'initial-nav closing-animation'}>
-                <Container className='bg-1'>
+            <Navbar className={showNavBar ? 'opened-nav opening-animation' : firstLoad ? 'initial-nav' :'initial-nav closing-animation'}>
+                <Container>
                     <Row>
                         <Col xs={12}>
                             <Navbar.Brand as={Link} to="/" onClick={closeNavOnly} className='border-bottom border-3 d-flex justify-content-center'>

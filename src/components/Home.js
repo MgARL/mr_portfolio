@@ -5,9 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-// My Comps
-import SocialMedia from '../subcomponents/SocialMedia'
-
 function Home() {
   return (
     <Container style={{ height: '100vh' }} className='d-flex flex-column justify-content-center align-itemns-center' >
@@ -29,7 +26,6 @@ function Home() {
           <Button variant="primary" as={Link} to="/portfolio" >My Projects</Button>
         </Col>
       </Row>
-      <SocialMedia />
     </Container>
   )
 }
