@@ -22,7 +22,7 @@ function Portfolio() {
       <Container style={{ marginTop: '4.5rem' }}>
         <h1>Projects</h1>
 
-        <Row className='my-5 g-4 text-center' xs={1} lg={2} xxl={3}>
+        <Row className='my-5 g-4 text-center' xs={1} md={3} lg={4}>
           {projects.map((project, i) => {
             return (
               <motion.div key={i} className='d-flex justify-content-center align-items-center' onClick={() => {
@@ -32,7 +32,7 @@ function Portfolio() {
               whileHover={{
                 scale: 1.1
               }}>
-                <Card style={{ width: '35rem' }} >
+                <Card style={{ width: '20rem' }} >
                   <div style={{ position: 'relative' }}>
                     <Card.Img variant="top" id={i} src={project.img} onMouseEnter={(e) => {
                       setHovering(true)

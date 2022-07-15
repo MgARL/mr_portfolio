@@ -37,8 +37,8 @@ function ProjectModal({ currentProject, ...props }) {
             <p>
               {description.frontEnd}
             </p>
-            {description.backEnd ? <hr /> : null}
-            {description.backEnd ? <p>{description.backEnd}</p> : null}
+            {description.backEnd && <hr />}
+            {description.backEnd && <p>{description.backEnd}</p>}
           </Col>
         </Row>
 
@@ -47,11 +47,11 @@ function ProjectModal({ currentProject, ...props }) {
             <motion.a className='btn btn-success' as='a' href={links.liveSite} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Live Site</motion.a>
           </Col>
           <Col className='my-2'>
-            <motion.a className='btn btn-success' href={links.frontEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Front End</motion.a>
+            <motion.a className='btn btn-success' href={links.frontEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>{links.backEndRepo ? 'Front End' : 'GitHub'}</motion.a>
           </Col>
-          {links.backEndRepo ? <Col className='my-2'>
+          {links.backEndRepo && <Col className='my-2'>
             <motion.a className='btn btn-success' as='a' href={links.backEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Back End</motion.a>
-          </Col> : null}
+          </Col>}
         </Row>
       </Modal.Body>
     </Modal>
