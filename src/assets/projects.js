@@ -1,7 +1,8 @@
-import jetPack from '../images/jetPack.png'
-import flyAway from '../images/FlyAway.png'
-import tpq from '../images/tpq.png'
-import ZAnthology from '../images/ZAnthology.png'
+import jetPack from '../images/logos/J.png'
+import flyAway from '../images/logos/Fly.png'
+import tpq from '../images/logos/TPQ-Detailing.png'
+import ZAnthology from '../images/logos/Zelda.png'
+import WashApp from '../images/logos/WashApp.png'
 
 const projects = [{
     title: 'TPQ Detailing',
@@ -50,6 +51,18 @@ const projects = [{
         backEndRepo: 'https://github.com/Digital-Dreamers/fly_away_server'
     },
     techs: ['JavaScript','React','HTML', 'CSS','Node.js','Express.js','MongoDB']
-},]
+},{
+    title: 'WashApp Carwash',
+    description: {
+        frontEnd: 'Web Application, where you can create an account and schedule a car-wash/auto-detailing service. Once in your account you can add vehicles, see upcoming appointments or all appointments Created with: Node, Express, PostgreSQL, Sequelize ORM, HTML, CSS, React,React Hooks, Bootstraps.',
+        
+    },
+    img: WashApp,
+    links: {
+        liveSite: 'https://classy-madeleine-704865.netlify.app/',
+        frontEndRepo: 'https://github.com/MgARL/washup_carwash'
+    },
+    techs: ['JavaScript','React','HTML', 'CSS','Bootstraps','Node.js','Express.js','PostgreSQL','Sequelize ORM', 'AWS RDS','Netlify','Heroku']
+}]
 
 export default projects;
