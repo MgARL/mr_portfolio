@@ -44,7 +44,9 @@ function ContactForm({ setMessageSent }) {
             setTimeout(() => setMessageNotSent(false), 3000)
 
         } catch (error) {
-            console.log(error)
+            setLoading(false)
+            setMessageNotSent(true)
+            setTimeout(() => setMessageNotSent(false), 3000)
         }
     }
 

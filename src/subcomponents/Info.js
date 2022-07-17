@@ -11,7 +11,7 @@ function Info() {
         myInfo: <a href='tel:9195264896'>(919) 523-4896</a>,
         img: <AiTwotonePhone style={{ fontSize: '2em' }} />
     }, {
-        type: 'Address',
+        type: 'Location',
         myInfo: 'Raleigh, NC',
         img: <BsFillPinMapFill style={{ fontSize: '2em' }} />
     }, {
