@@ -16,7 +16,7 @@ function Info() {
         img: <BsFillPinMapFill style={{ fontSize: '2em' }} />
     }, {
         type: 'Email',
-        myInfo: <a href='mailto:mgarlcr@gmail.com'>mgarlcr@gmail.com</a>,
+        myInfo: <a href='mailto:contact@miguel-rodriguez.dev'>contact@miguel-rodriguez.dev</a>,
         img: <AiOutlineMail style={{ fontSize: '2em' }} />
     }]
 
