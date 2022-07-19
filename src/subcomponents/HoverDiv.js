@@ -14,7 +14,9 @@ function HoverDiv({ project, hovering, setHovering, currentElement, index }) {
                     <h3>{project.title}</h3>
                 </Col>
                 <Col>
+                <strong>
                     Click for more info...
+                </strong>
                 </Col>
             </Row>
         </div>
