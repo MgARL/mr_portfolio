@@ -8,7 +8,7 @@ import { BsFillPinMapFill } from 'react-icons/bs'
 function Info() {
     const infoArr = [{
         type: 'Phone',
-        myInfo: <a href='tel:9195264896'>(919) 523-4896</a>,
+        myInfo: <a href='tel:9193077668'>(919) 307-7668</a>,
         img: <AiTwotonePhone style={{ fontSize: '2em' }} />
     }, {
         type: 'Location',
