@@ -17,7 +17,7 @@ function ContactForm({ setMessageSent }) {
     const handleSubmit = async () => {
         setLoading(true)
         try {
-            const response = await fetch('https://proxy-server-db.herokuapp.com/contact/send-form', {
+            const response = await fetch('https://proxy-server-prod.up.railway.app/contact/send-form', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
