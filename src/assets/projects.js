@@ -12,7 +12,7 @@ const projects = [{
     },
     img: WashApp,
     links: {
-        liveSite: 'https://classy-madeleine-704865.netlify.app/',
+        liveSite: '/washapp/',
         frontEndRepo: 'https://github.com/MgARL/washup_carwash'
     },
     techs: ['JavaScript','React','HTML', 'CSS','Bootstraps','Node.js','Express.js','PostgreSQL','Sequelize ORM', 'AWS RDS','Netlify','Heroku']
