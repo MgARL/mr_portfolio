@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 
 // My Comps
 import MySkills from '../subcomponents/MySkills'
-import Courses from '../subcomponents/Courses'
+import Education from '../subcomponents/Education'
+import ProfessionalExp from '../subcomponents/ProfessionalExp'
 
 function Skills() {
   return (
@@ -13,8 +14,9 @@ function Skills() {
         {/* My Skills list of skills/technologies */}
         <MySkills />
 
-        {/* Courses List of courses Taken*/}
-        <Courses />
+        <Education />
+
+        <ProfessionalExp />
 
       </Container>
     </motion.div>
