@@ -23,7 +23,7 @@ const projects = [{
     },
     img: ZAnthology,
     links: {
-        liveSite: 'https://startling-medovik-38d214.netlify.app/',
+        liveSite: '/zelda',
         frontEndRepo: 'https://github.com/MgARL/zelda-anthology',
     },
     techs: ['JavaScript', 'React', 'React-Router-Dom' ,'HTML', 'CSS', 'Bootstrap', 'Fetch API']

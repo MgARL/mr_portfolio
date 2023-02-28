@@ -1,2 +1,3 @@
 /meals/* https://moonlit-mooncake-9b86e8.netlify.app/:splat 200
+/zelda/* /:splat 200
 /* /index.html 200
