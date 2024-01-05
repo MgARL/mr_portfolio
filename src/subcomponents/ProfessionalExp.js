@@ -17,11 +17,10 @@ function ProfessionalExp() {
             <Card>
                 <Card.Body>
                     <Card.Title> <img src={ASCLogo} alt="ASC logo" height='80px' className='me-2' /> Archetype SC </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Sep 2021 - Currently</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">Sep 2022 - Currently</Card.Subtitle>
                     <Card.Text>
-                        Developing and maintaining solutions for multitude of clients leveraging our knowledge in Microsoft ecosystem, included but not limited
-                        to C#, Microsoft SQL Server, Azure DevOps, Azure Cloud Services, ASP.NET framework and others. Using tools like Visual Studio, Visual Studio Code,
-                        SQL Server Management Studio (SSMS), etc.
+                        Designing and sustaining solutions for a diverse clientele by harnessing our expertise within the Microsoft ecosystem, encompassing technologies such as C#, Microsoft SQL Server, Azure DevOps, Azure Cloud Services, and the ASP.NET framework, among others. 
+                        Utilizing advanced tools including Visual Studio, Visual Studio Code, and SQL Server Management Studio (SSMS), and more.
                     </Card.Text>
                 </Card.Body>
             </Card>
