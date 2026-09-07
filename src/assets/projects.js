@@ -1,6 +1,5 @@
 import jetPack from '../images/logos/J.png'
 import flyAway from '../images/logos/Fly.png'
-import tpq from '../images/logos/TPQ-Detailing.png'
 import ZAnthology from '../images/logos/Zelda.png'
 import WashApp from '../images/logos/WashApp.png'
 
@@ -8,7 +7,6 @@ const projects = [{
     title: 'WashApp Carwash',
     description: {
         frontEnd: 'Web Application, where you can create an account and schedule a car-wash/auto-detailing service. Once in your account you can add vehicles, see upcoming appointments or all appointments Created with: Node, Express, PostgreSQL, Sequelize ORM, HTML, CSS, React,React Hooks, Bootstraps.',
-        
     },
     img: WashApp,
     links: {
@@ -39,17 +37,6 @@ const projects = [{
         backEndRepo: 'https://github.com/MgARL/JetPack-Evader-Back-End'
     },
     techs: ['JavaScript','HTML', 'CSS','Node.js','Express.js']
-},{
-    title: 'TPQ Detailing',
-    description: {
-        frontEnd: 'Landing page for local mobile car detailing business. It displays pricing information and contact information.',
-    },
-    img: tpq,
-    links: {
-        liveSite: 'https://tpqdetailing.com/',
-        frontEndRepo: 'https://github.com/MgARL/tpq-detailing',
-    },
-    techs: ['JavaScript', 'React','React-Router-Dom','HTML', 'CSS', 'Bootstrap']
 },{
     title: 'Fly Away',
     description: {

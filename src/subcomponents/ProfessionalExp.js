@@ -15,30 +15,40 @@ function ProfessionalExp() {
     </Row>
     <Row className='mb-3'>
          {/* Odysseys */}
-         <Col xs={12} sm={4}>
+         <Col xs={12} sm={4} md={6}>
             <Card>
                 <Card.Body>
                     <Card.Title> <img src={OuiLogo} alt="Odysseys logo" height='80px' className='me-2' /> Odysseys Unlimited </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Feb 2024 - Currently</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">
+                        Feb 2024 - Aug 2026 
+                        <span className='text-end'>Developer</span>
+                    </Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">
+                        Aug 2026 - Currently 
+                        <span>Developer II</span>
+                    </Card.Subtitle>
                     <Card.Text>
                         Responsibilities include:
                         <ul>
-                            <li>Assist in the development and enhancement of the internal Customer Relationship Management (CRM) system using Microsoft Stack technologies.</li>
-                            <li>Perform routine maintenance of existing codebases to improve functionality and resolve bugs.</li>
-                            <li>Manage and maintain the SQL Server database associated with the CRM system, including writing
-                            queries and stored procedures.</li>
-                            <li>Implement feedback from users to enhance the functionality and user experience of the CRM system and more.</li>
+                            <li>Independently design, develop, and scale enterprise features for the in-house core Management System using C#, .NET 6+, and ASP.NET Core web APIs.</li>
+                            <li>Architect and optimize complex SQL Server databases, stored procedures, and ORM frameworks (EF Core/Dapper) for maximum performance and scalability.</li>
+                            <li>Troubleshoot complex, system-wide technical issues independently, while actively contributing to solution design and application architecture.</li>
+                            <li>Elevate team standards by conducting rigorous code reviews focused on logic, edge cases, and regression prevention.</li>
+                            <li>Translate complex business requirements into technical solutions, collaborating directly with stakeholders and managers to deliver high-impact software.</li>
                         </ul>
                     </Card.Text>
                 </Card.Body>
             </Card>
         </Col>
         {/* Archetype */}
-        <Col xs={12} sm={4}>
+        <Col xs={12} sm={4} md={6}>
             <Card>
                 <Card.Body>
                     <Card.Title> <img src={ASCLogo} alt="ASC logo" height='80px' className='me-2' /> Archetype SC </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">Sep 2022 - Feb 2024</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted d-flex justify-content-between">
+                        Sep 2022 - Feb 2024
+                        <span className='text-end'>Developer</span>
+                    </Card.Subtitle>
                     <Card.Text>
                         Responsibilities include designing and sustaining solutions for a diverse clientele by harnessing our expertise within the Microsoft ecosystem, encompassing technologies such as C#, Microsoft SQL Server, Azure DevOps, Azure Cloud Services, and the ASP.NET framework, among others. 
                         Utilizing advanced tools including Visual Studio, Visual Studio Code, and SQL Server Management Studio (SSMS), and more.

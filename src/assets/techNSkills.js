@@ -1,10 +1,12 @@
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GiStairsGoal } from "react-icons/gi";
+import { FaHeadSideVirus, FaMagnifyingGlass } from "react-icons/fa6";
 import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
 import { FaCss3Alt, FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa';
 import {
 	SiJavascript,
 	SiExpress,
-	SiMongodb,
-	SiPostgresql,
 	SiSequelize,
 	SiGit,
     SiCsharp,
@@ -15,6 +17,30 @@ import {
 } from 'react-icons/si';
 
 const skillsArray = [
+	{
+		name: 'C# Programming',
+		logo: <SiCsharp size='3em' />,
+	},
+	{
+		name: 'ASP.NET Framework',
+		logo: <SiDotnet size='3em' />,
+	},
+	{
+		name: 'Azure DevOps',
+		logo: <SiAzuredevops size='3em' />,
+	},
+	{
+		name: 'Microsoft Azure',
+		logo: <SiMicrosoftazure size='3em' />,
+	},
+	{
+		name: 'Microsoft SQL Server',
+		logo: <SiMicrosoftsqlserver size='3em' />,
+	},
+	{
+		name: 'Dapper',
+		logo: <BsDatabaseFillGear size='3em' />,
+	},
 	{
 		name: 'HTML5',
 		logo: <AiFillHtml5 size='3em' />,
@@ -38,40 +64,9 @@ const skillsArray = [
 	{
 		name: 'ExpressJS',
 		logo: <SiExpress size='3em' />,
-	},
-    {
-		name: 'C# Language',
-		logo: <SiCsharp size='3em' />,
-	},
-    {
-		name: 'ASP.NET Framework',
-		logo: <SiDotnet size='3em' />,
-	},
-    {
-		name: 'Azure DevOps',
-		logo: <SiAzuredevops size='3em' />,
-	},
-    {
-		name: 'Microsoft Azure',
-		logo: <SiMicrosoftazure size='3em' />,
-	},
-    {
-		name: 'Microsoft SQL Server',
-		logo: <SiMicrosoftsqlserver size='3em' />,
-	},
-    {
-		name: 'Dapper'
-	},
-	{
-		name: 'MongoDB',
-		logo: <SiMongodb size='3em' />,
-	},
-	{
-		name: 'MongooseODM',
-	},
-	{
+	},{
 		name: 'PostgreSQL',
-		logo: <SiPostgresql size='3em' />,
+		logo: <BiLogoPostgresql size='3em' />,
 	},
 	{
 		name: 'SequelizeORM',
@@ -91,12 +86,15 @@ const skillsArray = [
 	},
 	{
 		name: 'Problem Solver',
+		logo: <FaHeadSideVirus size='3em' />,
 	},
 	{
 		name: 'Goal Oriented',
+		logo: <GiStairsGoal size='3em' />,
 	},
 	{
 		name: 'Detail Oriented',
+		logo: <FaMagnifyingGlass size='3em' />,
 	},
 ];
 

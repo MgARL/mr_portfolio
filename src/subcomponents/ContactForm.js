@@ -13,11 +13,12 @@ function ContactForm({ setMessageSent }) {
     const [message, setMessage] = useState('')
     const [loading, setLoading] = useState(false)
     const [messageNotSent, setMessageNotSent] = useState(false)
+    const { REACT_APP_API_URL } = process.env
 
     const handleSubmit = async () => {
         setLoading(true)
         try {
-            const response = await fetch('https://proxy-server-prod.up.railway.app/contact/send-form', {
+            const response = await fetch(`${REACT_APP_API_URL}contact/send-form`, {
                 method: 'POST',
                 mode: 'cors',
                 headers: {

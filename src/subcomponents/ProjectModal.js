@@ -46,9 +46,9 @@ function ProjectModal({ currentProject, ...props }) {
           <Col className='my-2'>
             <motion.a className='btn btn-success' as='a' href={links.liveSite} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Live Site</motion.a>
           </Col>
-          <Col className='my-2'>
+          {links.frontEndRepo && <Col className='my-2'>
             <motion.a className='btn btn-success' href={links.frontEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>{links.backEndRepo ? 'Front End' : 'GitHub'}</motion.a>
-          </Col>
+          </Col>}
           {links.backEndRepo && <Col className='my-2'>
             <motion.a className='btn btn-success' as='a' href={links.backEndRepo} rel="noreferrer" target="_blank" whileHover={{scale: 1.1}}>Back End</motion.a>
           </Col>}

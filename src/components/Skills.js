@@ -14,9 +14,9 @@ function Skills() {
         {/* My Skills list of skills/technologies */}
         <MySkills />
 
-        <Education />
-
         <ProfessionalExp />
+
+        <Education />
 
       </Container>
     </motion.div>
