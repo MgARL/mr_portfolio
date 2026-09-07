@@ -20,7 +20,7 @@ function Home() {
         <Row>
           <Col xs={12} className="text-center">
             <p>
-              I specialize in the Microsoft Stack, I engineer robust backend architectures, RESTful APIs, and data-driven systems using C#, .NET Core, MS SQL Server, SSMS, and Dapper. I pair this backend expertise with strong front-end capabilities leveraging JavaScript, Kendo UI, HTML, CSS, and Bootstrap to deliver seamless, full-stack solutions.
+              I specialize in the Microsoft Stack, engineering robust backend architectures, RESTful APIs, and data-driven systems using C#, .NET Core, MS SQL Server, SSMS, and Dapper. I pair this backend expertise with strong front-end capabilities leveraging JavaScript, Kendo UI, HTML, CSS, and Bootstrap to deliver seamless, full-stack solutions.
             </p>
           </Col>
         </Row>
