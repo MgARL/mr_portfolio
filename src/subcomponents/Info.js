@@ -12,7 +12,7 @@ function Info() {
         img: <AiTwotonePhone style={{ fontSize: '2em' }} />
     }, {
         type: 'Location',
-        myInfo: 'Raleigh, NC',
+        myInfo: 'Myrtle Beach, SC',
         img: <BsFillPinMapFill style={{ fontSize: '2em' }} />
     }, {
         type: 'Email',
