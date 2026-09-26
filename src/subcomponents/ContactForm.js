@@ -18,7 +18,7 @@ function ContactForm({ setMessageSent }) {
     const handleSubmit = async () => {
         setLoading(true)
         try {
-            const response = await fetch(`${REACT_APP_API_URL}contact/send-form`, {
+            const response = await fetch(`${REACT_APP_API_URL}portfolio/contact-form/submit`, {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
@@ -26,10 +26,10 @@ function ContactForm({ setMessageSent }) {
                 },
                 referrerPolicy: 'no-referrer',
                 body: JSON.stringify({
-                    name,
-                    email,
-                    subject,
-                    message
+                    Name: name,
+                    Email: email,
+                    Subject: subject,
+                    Message: message
                 })
             })
             setLoading(false)
